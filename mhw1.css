@@ -1,0 +1,406 @@
+body{
+    background-color: black;
+    font-family: 'Averia Serif Libre', cursive;
+    letter-spacing: 2px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+
+a{
+    cursor: pointer;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+nav{
+    height:90px;
+    width: 1200px;
+    background-color: black;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    border: 4px solid greenyellow;
+    border-radius: 50px;
+    background-color: black;
+    color:greenyellow;
+    padding: 20px;
+    font-size: 15px;
+    text-transform: uppercase;  
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+#menu {
+    display: none;
+    }
+    #menu div {
+    height:5px;
+    width: 40px;
+    background-color: greenyellow;
+    margin: 5px 0;
+    margin-left: 20px;
+    }
+
+
+header{
+    height:500px;
+    width: 1200px;
+    background-color: white;
+    background-image: url(https://i.imgur.com/DWq5VtG.jpg);
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    font-family:'Syne Mono', monospace;
+    position:relative;
+
+    
+}
+
+#overlay{
+    background-color:rgba(0, 0, 0, .2);
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+    display:inline;
+}
+
+#gamecorner{
+    z-index:1;
+}
+
+#game{
+    color:black;
+}
+
+
+#corner{
+    color:greenyellow;
+}
+
+section{
+    height:2100px;
+    width: 1000px;
+    background-color: white;
+    margin: 20px 0px;
+    
+}
+
+section p{
+   
+    background-color: greenyellow;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+section p strong{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'Prata', serif;
+
+
+}
+
+section span { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+a.button {
+    border-radius: 50px;
+    background-color: greenyellow ;
+    color: black;
+    padding:15px;
+    text-decoration: none;
+}
+
+a.button:hover{
+    background-color: rgba(173, 255, 47, 0.75);
+}
+
+#consolemomento, .links, #promozioni1, #promozioni2, .popolari{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#console1, #console2 {
+    background-color: black;
+    height:250px;
+    width: 50%;
+    margin:1%;
+}
+
+#console1{
+    background-image: url(https://i.imgur.com/UPUWTef.jpg);
+    
+}
+
+#console2{
+background-image: url(https://i.imgur.com/4ornGeG.jpg);
+
+}
+
+
+#gioco1, #gioco2, #gioco3, #gioco4 {
+    background-color: black;
+    height:300px;
+    width: 50%;
+    margin:1%;
+}
+
+#gioco1{
+    background-image: url(https://i.imgur.com/1zxXl2D.jpg);
+}
+
+#gioco2{
+    background-image: url(https://i.imgur.com/J9vrFac.jpg);
+}
+
+#gioco3{
+    background-image: url(https://i.imgur.com/MFYVoEj.jpg);
+}
+
+#gioco4{
+    background-image: url(https://i.imgur.com/1Mc5D30.jpg);
+}
+
+
+#promo1, #promo2, #promo3 {
+    background-color: black;
+    height:250px;
+    width: 50%;
+    margin:1%;
+    background-image: url(https://i.imgur.com/jkV6GiI.jpg);
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Prata', serif;
+    font-weight: bold;
+    border: 5px solid black;
+}
+
+
+section h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+
+footer{
+    
+    height:200px;
+    width: 1200px;
+    background-color: greenyellow;
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: 'Prata', serif;
+
+}
+
+footer div{
+    text-align: left;
+}
+
+footer h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+footer a{
+    display:block;
+    font-size: 15px;
+}
+
+#nomecognome h2{
+    font-size:20px;
+    text-align: center;
+    color:black;
+    font-family: 'Prata', serif;
+}
+
+
+
+/* Modalità tablet */
+
+
+@media(max-width: 1199px){
+
+    
+
+nav{
+        width:100vw;
+justify-content: flex-start;
+}
+
+
+.collegamenti{
+    display: none;
+    }
+
+    #menu
+    {
+    display: block;
+    }
+
+    header{ 
+        width:100vw;
+        font-size: 7em;
+    }
+
+    section{
+       flex-grow:1;
+       height:100%; 
+       width:100%;
+       padding-bottom: 500px;
+       
+        
+    }
+
+
+    section p strong{
+        font-size: 1.5em;
+    }
+
+    section h1{
+        font-size: 1em;
+    }
+
+    #promo1, #promo2, #promo3{
+        font-size:2em;
+    }
+
+    #consolemomento, .links, #promozioni1, #promozioni2, .popolari{
+        flex-direction: column;
+        font-size:0.8em;
+    }
+
+    
+    footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height:13%;
+        
+    }
+
+    footer h2, footer a{
+        font-size: 0.8em;
+    }
+
+    #nomecognome h2{
+        font-size: 0.7em;
+    }
+    
+
+}
+
+
+/* Modalità smartphone  */
+
+
+@media(max-width: 650px){
+
+    
+
+    nav{
+            width:100vw;
+    justify-content: flex-start;
+    }
+    
+    
+    .collegamenti{
+        display: none;
+        }
+    
+        #menu
+        {
+        display: block;
+        }
+    
+        header{ 
+            width:100vw;
+            font-size: 5em;
+        }
+    
+        section{
+           flex-grow:1;
+           height:100%; 
+           width:100%;
+           padding-bottom: 500px;
+           
+            
+        }
+    
+        section p strong{
+            font-size: 1em;
+        }
+    
+        section h1{
+            font-size: 0.8em;
+        }
+    
+        #promo1, #promo2, #promo3{
+            font-size:1em;
+        }
+    
+        #consolemomento, .links, #promozioni1, #promozioni2, .popolari{
+            flex-direction: column;
+            font-size:0.8em;
+        }
+    
+        
+        footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height:10%;
+        
+            
+        }
+    
+        footer h2, footer a{
+            font-size: 0.5em;
+        }
+    
+        #nomecognome h2{
+            font-size: 0.4em;
+        }
+        
+    
+    }
+
+    
